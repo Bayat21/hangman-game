@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-list {
+  color: white;
+  padding: 0.8rem ;
+  background-color: #768fa9;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.75);
+}
+
+.menu-list:hover {
+  cursor: pointer;
+  background-color: rgb(26 68 111);
+  overflow: hidden;
+}
+
+.menu-list:hover button {
+  transform: scale(1.1);
+  
+}

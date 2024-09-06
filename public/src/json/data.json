@@ -1,0 +1,139 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "jurassic park",
+      "description": "a select group chosen to tour an island theme park populated by dinosaurs created from prehistoric DNA."
+    },
+    {
+      "id": "2",
+      "title": "the imitation game",
+      "description": "In 1939, newly created British intelligence agency MI6 recruits Cambridge mathematics alumnus Alan Turing to crack Nazi codes."
+    },
+    {
+      "id": "3",
+      "title": "avengers",
+      "description": "Nick Fury, director of SHIELD, initiates a superhero recruitment effort to defeat the unprecedented threat to Earth."
+    },
+    {
+      "id": "4",
+      "title": "arrival",
+      "description": "Linguistics professor Louise Banks leads an elite team of investigators when gigantic spaceships touch down in 12 locations around the world."
+    }
+  ],
+
+  "celebrities": [
+    {
+      "id": "1",
+      "title": "chris evans",
+      "description": "an American actor who was known for his charismatic performances in superhero movies"
+    },
+    {
+      "id": "2",
+      "title": "benedict cumberbatch",
+      "description": "an acclaimed British motion-picture, theater, and television actor known for his portrayals of intelligent."
+    },
+    {
+      "id": "3",
+      "title": "daniel craig",
+      "description": "an English actor known for his restrained gravitas and ruggedly handsome features."
+    },
+    {
+      "id": "4",
+      "title": "lana del rey",
+      "description": " an American singer-songwriter known for pairing glamorously morose musical themes with classic Americana and a nostalgic, cinematic visual style."
+    }
+  ],
+
+  "countries": [
+    {
+      "id": "1",
+      "title": "sweden",
+      "description": "It is the largest Nordic country and the fifth-largest country in Europe."
+    },
+    {
+      "id": "2",
+      "title": "russia",
+      "description": " It is a country spanning Eastern Europe and North Asia. It is the largest country in the world by area."
+    },
+    {
+      "id": "3",
+      "title": "costa rica",
+      "description": "it is a country in the Central American region of North America."
+    },
+    {
+      "id": "4",
+      "title": "austria",
+      "description": "it is a country in Central Europe, lying in the Eastern Alps. It is a federation of nine states."
+    }
+  ],
+
+  "tvshows": [
+    {
+      "id": "1",
+      "title": "supernatural",
+      "description": "Two brothers follow their father's footsteps as hunters, fighting evil supernatural beings of many kinds, including monsters, demons, and gods."
+    },
+    {
+      "id": "2",
+      "title": "primeval",
+      "description": "When strange anomalies start to appear all over England, Professor Cutter and his team must track down and capture all sorts of dangerous prehistoric creatures."
+    },
+    {
+      "id": "3",
+      "title": "the last kingdom",
+      "description": "As Alfred the Great defends his kingdom from Norse invaders, Uhtred--born a Saxon but raised by Vikings--seeks to claim his ancestral birthright."
+    },
+    {
+      "id": "4",
+      "title": "house of dragon",
+      "description": "An internal succession war within House Targaryen at the height of its power, 172 years."
+    }
+  ],
+
+  "songs": [
+    {
+      "id": "1",
+      "title": "god gave me you",
+      "description": "In 2011, American country music singer Blake Shelton recorded the song on his 2011 album Red River Blue."
+    },
+    {
+      "id": "2",
+      "title": "skyfall",
+      "description": " It is the theme song to the 2012 film of the same name, performed by English singer-songwriter Adele."
+    },
+    {
+      "id": "3",
+      "title": "smooth criminal",
+      "description": "It's a song by the American pop singer Michael Jackson, released on November 14, 1988, from his seventh studio album, Bad (1987)."
+    },
+    {
+      "id": "4",
+      "title": "elephant",
+      "description": "the largest living land animals."
+    }
+  ],
+
+  "animals": [
+    {
+      "id": "1",
+      "title": "dolphins",
+      "description": "an aquatic mammal in the clade Odontoceti (toothed whale)."
+    },
+    {
+      "id": "2",
+      "title": "penguin",
+      "description": "Penguins are flightless aquatic birds that live almost exclusively in the Southern Hemisphere"
+    },
+    {
+      "id": "3",
+      "title": "giraffe",
+      "description": "It is the tallest living terrestrial animal and the largest ruminant on Earth"
+    },
+    {
+      "id": "4",
+      "title": "hazard",
+      "description": " It is a song written, produced, and performed by American singer-songwriter Richard Marx."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the hangman game</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="h-screen w-full bg-backupBackground bg-[url('./img/mainPage/background.jpg')] bg-cover bg-center flex items-center justify-center bg-no-repeat overflow-hidden"
+  >
+    <section class="container min-w-[17rem] max-w-[20.93rem] sm:max-w-[40rem]">
+      <div
+        class="w-full h-full flex justify-start items-center flex-col gap-12 bg-blueBackground/85 rounded-3xl shadow-[0px_3px_0px_2px_rgba(0,0,0,1)] pt-[1rem] pb-[2rem]"
+      >
+        <div class="flex justify-between">
+          <div
+            class="top-0 left-0 text-4xl text-white text-center rounded-full border-black border-2 w-[2.3rem] h-[2.3rem] flex justify-center items-center mr-2 hover:cursor-pointer"
+            id="backBtn"
+          >
+            <span class="-translate-y-1 hover:scale-[1.1]">&crarr;</span>
+          </div>
+
+          <p class="text-white font-bold text-3xl text-center">
+            Pick a category
+          </p>
+        </div>
+
+        <div class="h-full w-full">
+          <ul
+            class="grid grid-cols-1 grid-rows-6 h-full content-center items-center gap-2.5 w-3/5 mx-auto sm:grid-cols-2 sm:grid-rows-3 sm:gap-y-4 sm:gap-x-7"
+          >
+            <li class="menu-list">Movies</li>
+            <li class="menu-list">Celebrities</li>
+            <li class="menu-list">Countries</li>
+            <li class="menu-list">Tvshows</li>
+            <li class="menu-list">Animals</li>
+            <li class="menu-list">Songs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let liItems = document.querySelectorAll(".menu-list");
+      let backBtn = document.querySelector("#backBtn");
+      liItems.forEach((list) => {
+        list.addEventListener("click", () => {
+          console.log(list.innerHTML);
+          localStorage.setItem("category", list.innerHTML);
+          location.assign("http://127.0.0.1:5500/public/src/game/game.html");
+        });
+      });
+
+      backBtn.addEventListener("click", () => {
+        location.assign("http://127.0.0.1:5500/public/index.html");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the hangman game</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="h-screen w-full bg-backupBackground bg-[url('./img/mainPage/background.jpg')] bg-cover bg-center flex items-center justify-center bg-no-repeat overflow-hidden"
+  >
+    <section class="container min-w-[17rem] max-w-[20.93rem] sm:max-w-[40rem]">
+      <div
+        class="w-full h-full flex justify-start items-center flex-col gap-10 bg-blueBackground/85 rounded-3xl shadow-[0px_3px_0px_2px_rgba(0,0,0,1)] pt-[1rem] pb-[2rem]"
+      >
+        <div class="flex justify-between">
+          <div
+            class="top-0 left-0 text-4xl text-white text-center rounded-full border-black border-2 w-[2.3rem] h-[2.3rem] flex justify-center items-center mr-2 hover:cursor-pointer"
+            id="backBtn"
+          >
+            <span class="-translate-y-1 hover:scale-[1.1]">&crarr;</span>
+          </div>
+
+          <p class="text-white font-bold text-3xl text-center">How To Play</p>
+        </div>
+
+        <main class="flex flex-col gap-3 pl-5 sm:gap-7">
+          <div class="flex flex-col justify-center items-center w-full gap-2">
+            <div class="flex w-full gap-2 items-center">
+              <div
+                class="w-[2rem] h-[2rem] bg-purpleBackground text-white flex items-center justify-center rounded-full font-bold sm:w-[3rem] sm:h-[3rem] sm:text-2xl"
+              >
+                01
+              </div>
+              <h2 class="text-[1.2rem] font-bold sm:text-2xl">
+                Choose A Category
+              </h2>
+            </div>
+            <div>
+              <p
+                class="px-7 text-sm leading-4 sm:text-lg sm:leading-6 sm:px-10"
+              >
+                First, choose a word category,The
+                computer then randomly selects a secret word from that topic and
+                shows you blanks for each letter of the word.
+              </p>
+            </div>
+            
+          </div>
+          <div class="flex flex-col justify-center items-center w-full gap-2">
+            <div class="flex w-full gap-2 items-center">
+              <div
+                class="w-[2rem] h-[2rem] bg-purpleBackground text-white flex items-center justify-center rounded-full font-bold sm:w-[3rem] sm:h-[3rem] sm:text-2xl"
+              >
+                02
+              </div>
+              <h2 class="text-[1.2rem] font-bold sm:text-2xl">
+                Guess Letters
+              </h2>
+            </div>
+            <div>
+              <p
+                class="px-7 text-sm leading-4 sm:text-lg sm:leading-6 sm:px-10"
+              >
+              Take turns guessing letters. The computer fills in the relevant blank spaces if your guess is correct. If it’s wrong, you lose some health, which empties after eight incorrect guesses.
+              </p>
+            </div>
+            
+          </div>
+          <div class="flex flex-col justify-center items-center w-full gap-2">
+            <div class="flex w-full gap-2 items-center">
+              <div
+                class="w-[2rem] h-[2rem] bg-purpleBackground text-white flex items-center justify-center rounded-full font-bold sm:w-[3rem] sm:h-[3rem] sm:text-2xl"
+              >
+                03
+              </div>
+              <h2 class="text-[1.2rem] font-bold sm:text-2xl">
+                Win Or Loose
+              </h2>
+            </div>
+            <div>
+              <p
+                class="px-7 text-sm leading-4 sm:text-lg sm:leading-6 sm:px-10"
+              >
+              You win by guessing all the letters in the word before your health runs out. If the health bar empties before you guess the word, you lose.
+              </p>
+            </div>
+            
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <script>
+      let liItems = document.querySelectorAll(".menu-list");
+      let backBtn = document.querySelector("#backBtn");
+      liItems.forEach((list) => {
+        list.addEventListener("click", () => {
+          console.log(list.innerHTML);
+          localStorage.setItem("category", list.innerHTML);
+          location.assign("http://127.0.0.1:5500/public/src/game/game.html");
+        });
+      });
+
+      backBtn.addEventListener("click", () => {
+        location.assign("http://127.0.0.1:5500/public/index.html");
+      });
+    </script>
+  </body>
+</html>
