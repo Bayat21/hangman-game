@@ -14,7 +14,7 @@ You can simply open the index.html file in your web browser to start playing the
 
 If you want to ensure all features work smoothly (such as saving scores), you can optionally use a local web server like Live Server in Visual Studio Code.
 
-##ِLive Demo
+##ِ Live Demo
 
 [Play Hangman](https://bayat21.github.io/hangman-game/)
 
