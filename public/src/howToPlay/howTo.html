@@ -98,18 +98,12 @@
     </section>
 
     <script>
-      let liItems = document.querySelectorAll(".menu-list");
+ 
       let backBtn = document.querySelector("#backBtn");
-      liItems.forEach((list) => {
-        list.addEventListener("click", () => {
-          console.log(list.innerHTML);
-          localStorage.setItem("category", list.innerHTML);
-          location.assign("http://127.0.0.1:5500/public/src/game/game.html");
-        });
-      });
+  
 
       backBtn.addEventListener("click", () => {
-        location.assign("http://127.0.0.1:5500/public/index.html");
+        location.assign("../../index.html");
       });
     </script>
   </body>

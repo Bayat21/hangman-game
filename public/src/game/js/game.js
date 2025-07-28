@@ -10,16 +10,11 @@ const heartElem = $.querySelector(".heart");
 const gameOverMenu = $.querySelector(".game-over-menu");
 const loadingScreen = $.querySelector(".loading-screen");
 
-
-
-
 let steps = 0;
 let heartCount = 10;
 let scoreCount = +localStorage.getItem("score");
 let secretWordObj = "";
 let lettersArray = [];
-
-
 
 async function addDomElements() {
   loadingScreen.style.display = "none";
@@ -48,15 +43,12 @@ async function getWord() {
   let category = localStorage.getItem("category").toLowerCase();
 
   try {
-    let response = await fetch(
-      "http://127.0.0.1:5500/public/src/json/data.json",
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-      }
-    );
+    let response = await fetch("../json/data.json", {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+    });
     let data = await response.json();
     let wordsList = await data[category];
     wordObj = await wordsList[Math.floor(Math.random() * 4)];
@@ -111,11 +103,11 @@ const loadNav = (secretWordObj) => {
 };
 
 const goToHome = () => {
-  location.assign("http://127.0.0.1:5500/public/index.html");
+  location.assign("../../index.html");
 };
 
 const goToMenu = () => {
-  location.assign("http://127.0.0.1:5500/public/src/menu/menu.html");
+  location.assign("../menu/menu.html");
 };
 
 const setScore = () => {
@@ -221,6 +213,4 @@ const showEndGameScreen = (flag) => {
   });
 };
 
-
 window.addEventListener("load", addDomElements);
-

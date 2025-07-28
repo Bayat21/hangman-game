@@ -13,9 +13,13 @@
     />
   </head>
   <body
-    class="h-screen w-full bg-backupBackground bg-[url('./img/mainPage/background.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
+    class="h-screen w-full bg-backupBackground bg-[url('./img/mainPage/background.jpg')] bg-cover bg-center bg-no-repeat overflow-y-scroll relative"
   >
-  <div class=" loading-screen w-full h-screen bg-blueBackground absolute z-50 flex items-center justify-center text-white text-2xl"><span class="loading-screen-text">loading...</span></div>
+    <div
+      class="loading-screen w-full h-screen bg-blueBackground absolute z-50 flex items-center justify-center text-white text-2xl"
+    >
+      <span class="loading-screen-text">loading...</span>
+    </div>
     <nav
       class="h-[8vh] w-full backdrop-blur-xl flex justify-around items-center text-xl sm:h-[12vh] sm:text-2xl md:text-3xl"
     >
@@ -40,7 +44,7 @@
         class="h-[90vh] w-full grid grid-rows-3 sm:grid-rows-2 sm:grid-cols-2 sm:pb-5"
       >
         <section
-          class="container flex gap-1 justify-center items-center sm:col-start-2  sm:row-span-2 sm:flex-col"
+          class="container flex gap-1 justify-center items-center sm:col-start-2 sm:row-span-2 sm:flex-col"
         >
           <div
             class="w-1/2 text-center overflow-clip flex items-center justify-center sm:h-1/2"
@@ -53,7 +57,7 @@
           </div>
 
           <div
-            class="tip-container font-bold  flex items-center justify-start p-1 text-[10px] leading-3 sm:text-[1rem] sm:leading-4 sm:h-1/2 md:text-[1.2rem] md:leading-5 xl:leading-7 lg:text-[1.6rem]"
+            class="tip-container font-bold flex items-center justify-start p-1 text-[10px] leading-3 sm:text-[1rem] sm:leading-4 sm:h-1/2 md:text-[1.2rem] md:leading-5 xl:leading-7 lg:text-[1.6rem]"
           ></div>
         </section>
         <section
@@ -109,6 +113,6 @@
         </div>
       </section>
     </div>
-    <script src="js/game.js"></script>
+    <script src="./js/game.js"></script>
   </body>
 </html>

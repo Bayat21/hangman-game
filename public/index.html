@@ -10,13 +10,14 @@
       rel="stylesheet"
     />
     <link href="./src/output.css" rel="stylesheet" />
-
   </head>
 
   <body
     class="h-screen w-full bg-backupBackground bg-[url('./img/mainPage/background.jpg')] bg-cover bg-center flex items-center justify-center bg-no-repeat overflow-hidden"
   >
-    <section class="container h-[12rem] min-w-[17rem] max-w-[20.93rem] sm:h-[20rem] sm:max-w-[40rem] ">
+    <section
+      class="container h-[12rem] min-w-[17rem] max-w-[20.93rem] sm:h-[20rem] sm:max-w-[40rem]"
+    >
       <div
         class="w-full h-full flex justify-center items-center flex-col gap-5 bg-blueBackground/85 rounded-3xl relative pt-8 shadow-[0px_3px_0px_2px_rgba(0,0,0,1)]"
       >
@@ -32,13 +33,16 @@
           class="h-[4rem] w-[4rem] bg-purpleBackground rounded-full flex items-center justify-center shadow-[0px_3px_0px_0px_rgba(0,0,0,0.75)] hover:scale-110 hover:shadow-[0px_5px_2px_0px_rgba(0,0,0,0.75)] transition-all ease-out sm:h-[7rem] sm:w-[7rem] hover:cursor-pointer"
         >
           <a
-            class="text-5xl text-white flex justify-center items-center drop-shadow-[0px_3px_0px_rgba(0,0,0,0.75)] sm:text-7xl " onclick="goToMenu(event)"
+            class="text-5xl text-white flex justify-center items-center drop-shadow-[0px_3px_0px_rgba(0,0,0,0.75)] sm:text-7xl"
+            onclick="goToMenu(event)"
           >
             &#11208;
           </a>
         </div>
         <div class="hover:scale-105" onclick="goToHowTo()">
-          <a href="#" class="text-sm text-white font-semibold underline sm:text-xl"
+          <a
+            href="#"
+            class="text-sm text-white font-semibold underline sm:text-xl"
             >How to play ?</a
           >
         </div>
@@ -47,12 +51,12 @@
 
     <script>
       const goToMenu = (event) => {
-        location.assign('http://127.0.0.1:5500/public/src/menu/menu.html')
-      }
+        location.assign("./src/menu/menu.html");
+      };
 
       const goToHowTo = (event) => {
-        location.assign('http://127.0.0.1:5500/public/src/howToPlay/howTo.html')
-      }
+        location.assign("./src/howToPlay/howTo.html");
+      };
     </script>
   </body>
 </html>
