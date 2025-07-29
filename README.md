@@ -18,4 +18,10 @@ If you want to ensure all features work smoothly (such as saving scores), you ca
 
 [Play Hangman](https://bayat21.github.io/hangman-game/)
 
+## ⚠️ Note
+
+This is a practice version of the Hangman game code.  
+It's for testing and learning purposes and will be improved later.  
+Not the final version yet, so expect some changes ahead.
+
 
