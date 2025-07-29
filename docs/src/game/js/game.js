@@ -32,7 +32,7 @@ const displayKeyboard = () => {
   let keyboardHTML = "";
 
   for (let i = 97; i <= 122; i++) {
-    keyboardHTML += `<div class=" h-full w-full bg-blueBackground/45 rounded-3xl shadow-[0px_2px_0px_2px_rgba(0,0,0,1)] flex items-center justify-center text-lg text-white font-bold hover:scale-110 hover:cursor-pointer hover:bg-slate-500 active:scale-75 ease-out sm:text-2xl" onclick='typeTheLetter(
+    keyboardHTML += `<div class="basis-[1.5rem] bg-blueBackground/45 rounded-3xl shadow-[0px_2px_0px_2px_rgba(0,0,0,1)] flex items-center justify-center text-lg text-white font-bold hover:scale-110 hover:cursor-pointer hover:bg-slate-500 active:scale-75 ease-out md:text-3xl md:basis-[3rem] md:h-[3rem]" onclick='typeTheLetter(
       event
     ); this.onclick=null;'>${String.fromCharCode(i)}</div>`;
   }
