@@ -1,9 +1,11 @@
 const body = document.querySelector("body");
 
 const orientationAlert = function () {
-  let isLandScape = window.innerHeight < window.innerWidth;
-  console.log(navigator.userAgentData)
-  if (navigator.userAgentData.mobile) {
+  let isLandScape = window.innerHeight < window.innerWidth
+  const isNarrowScreen = window.innerWidth < 768;
+  const isMobile = navigator.userAgentData.mobile
+
+  if (isMobile && isNarrowScreen) {
     const rotateAlertScreen = document.querySelector("#rotation-alert-screen");
     if (isLandScape && !rotateAlertScreen) {
       body.insertAdjacentHTML(
