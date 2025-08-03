@@ -2,6 +2,13 @@
 
 ## A classic word-guessing game bulit with HTML, JavaScript and Tailwind CSS.
 
+## Built With
+
+- HTML  
+- JavaScript  
+- Tailwind CSS  
+- Local Storage API
+
 ## Features  
 
 - Responsive design using Tailwind CSS
