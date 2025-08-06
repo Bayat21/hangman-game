@@ -1,6 +1,6 @@
 # Hangman game 
 
-## A classic word-guessing game bulit with HTML, JavaScript and Tailwind CSS.
+## A simple Hangman game implemented using basic JavaScript functions. The word list for the game is stored in a local JSON file.
 
 ## Built With
 
