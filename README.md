@@ -27,8 +27,8 @@ If you want to ensure all features work smoothly (such as saving scores), you ca
 
 ## ⚠️ Note
 
-The word list for the game is loaded from a local JSON file.
-This is a practice version of the Hangman game code.  
+- The word list for the game is loaded from a local JSON file.
+- This is a practice version of the Hangman game code.  
 It's for testing and learning purposes and will be improved later.  
 Not the final version yet, so expect some changes ahead.
 
